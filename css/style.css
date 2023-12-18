@@ -42,13 +42,15 @@ a {
 }
 
 .section {
-    padding-top: 120px;
-    padding-bottom: 120px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+
 }
 
 
 .list {
     list-style: none;
+    display: flex;
 }
 
 .logo {
@@ -59,18 +61,28 @@ a {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #4d5ae5;
+
 }
 
 .logo-span {
     color: #2e2f42;
+    margin-right: 76px;
+}
+
+.logo-span :last-child {
+    margin-right: 0;
 }
 
 .list-item-link {
+    display: block;
     color: #2e2f42;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
+    margin-right: 40px;
+    padding-top: 24px;
+    padding-bottom: 24px;
 }
 
 .list .list-item-link:hover,
@@ -88,6 +100,11 @@ a {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #434455;
+    margin-right: 40px;
+}
+
+.address-list-link :last-child {
+    margin-right: 0;
 }
 
 .list .address-list-link:hover,
@@ -101,25 +118,37 @@ a {
 
 .section-one-heading {
     font-family: "Roboto";
-    font-weight: bold;
+    font-weight: 700;
+    font-style: normal;
     font-size: 56px;
     color: #ffffff;
     line-height: 1.07;
     text-align: center;
-    letter-spacing: 0.02em;
+    letter-spacing: 1.12px;
+    width: 496px;
     margin-left: auto;
     margin-right: auto;
+    padding-top: 188px 472px 292px 472px;
 
 }
 
 .button {
     background-color: #4D5AE5;
+
+    display: inline-flex;
+    align-items: flex-start;
     font-weight: 500;
     line-height: 1.5;
     letter-spacing: 0.04em;
     color: #ffffff;
     cursor: pointer;
+    padding: 16px 32px;
+    border: 4px;
+    border-radius: 4px;
+    gap: 10px;
+
 }
+
 
 .button:hover,
 .button:focus {
@@ -132,6 +161,7 @@ a {
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: #2e2f42;
+    margin-bottom: 8px;
 }
 
 .section-two-text {
@@ -192,6 +222,7 @@ a {
 
 .portfolio-item {
     list-style: none;
+    border-bottom: 1px solid var(--CORNFLOWER, #E7E9FC);
 }
 
 .portfolio-heading {
@@ -221,4 +252,24 @@ a {
 
 .logo-span-footer {
     color: #f4f4fd;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+}
+
+.nav-container {
+    display: flex;
+    align-items: center;
+}
+
+.list-advantages {
+    display: flex;
+    gap: 24px;
+}
+
+.list-advantages-item {
+    width: 264px;
+    justify-content: center;
 }
