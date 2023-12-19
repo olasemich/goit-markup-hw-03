@@ -47,10 +47,24 @@ a {
 
 }
 
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    overflow: hidden;
+}
+
 
 .list {
     list-style: none;
     display: flex;
+    align-items: center;
 }
 
 .logo {
@@ -231,17 +245,16 @@ a {
 
 .portfolio-list {
     display: flex;
-
-    width: 360px;
-    gap: 32px;
     flex-wrap: wrap;
+    gap: 32px;
+
 
 }
 
 .portfolio-item {
     list-style: none;
-    border-bottom: 1px solid var(--CORNFLOWER, #E7E9FC);
     flex-direction: column;
+    width: calc((100% - 24px * 2) / 3);
 
 }
 
@@ -274,6 +287,8 @@ a {
 
 .logo-span-footer {
     color: #f4f4fd;
+    display: inline-block;
+    margin-bottom: 16px;
 }
 
 .header-container {
@@ -303,4 +318,9 @@ a {
 
 .team-pic {
     padding-bottom: 32px;
+}
+
+.footer-container {
+    padding-top: 100px;
+    padding-bottom: 100px;
 }
