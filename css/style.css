@@ -42,8 +42,8 @@ a {
 }
 
 .section {
-    padding-top: 60px;
-    padding-bottom: 60px;
+    padding-top: 120px;
+    padding-bottom: 120px;
 
 }
 
@@ -182,7 +182,7 @@ a {
     letter-spacing: 0.02em;
     text-transform: capitalize;
     color: #2e2f42;
-    padding-bottom: 72px;
+    margin-bottom: 72px;
 }
 
 .team-list-name {
